@@ -25,7 +25,9 @@
                                          "sn"        => array("label" => "Last name",       "onkeyup" => "update_username(); update_email(); update_cn(); update_homedir(); check_email_validity(document.getElementById('mail').value);"),
                                          "uid"       => array("label" => "System username", "onkeyup" => "check_entity_name_validity(document.getElementById('uid').value,'uid_div'); update_email(); update_homedir(); check_email_validity(document.getElementById('mail').value);"),
                                          "cn"        => array("label" => "Common name",     "onkeyup" => "auto_cn_update = false;"),
-                                         "mail"      => array("label" => "Email",           "onkeyup" => "auto_email_update = false; check_email_validity(document.getElementById('mail').value);")
+                                         "mail"      => array("label" => "Email",           "onkeyup" => "auto_email_update = false; check_email_validity(document.getElementById('mail').value);"),
+                                         "mobile"    => array("label" => "Mobile"),
+                                         "title"     => array("label" => "Title")
                                         );
 
  $LDAP['group_attribute'] = (getenv('LDAP_GROUP_ATTRIBUTE') ? getenv('LDAP_GROUP_ATTRIBUTE') : 'cn');
